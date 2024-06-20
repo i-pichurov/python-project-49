@@ -31,6 +31,5 @@ def even_game():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{even_check(random_number)}'.\nLet's try again, {name}!")
             break
-    
     if i == 3:
         print(f'Congratulations, {name}!')
