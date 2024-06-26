@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 import prompt
 import random
-
-
-def welcome_user():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    return name
+import brain_games.games.welcome
 
 
 def even_check(random_number):
@@ -18,7 +12,7 @@ def even_check(random_number):
 
 
 def even_game():
-    name = welcome_user()
+    name = brain_games.games.welcome.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:
