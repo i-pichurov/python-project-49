@@ -8,7 +8,7 @@ def br_calc():
     num2 = random.randint(1, 100)
     operator = ["-", "+", "*"]
     op = random.choice(operator)
-    question = f'{num1}{op}{num2}'
+    question = f'{num1} {op} {num2}'
     if op == "-":
         answer = num1 - num2
     elif op == "+":
