@@ -22,4 +22,4 @@ def br_progression():
         else:
             question = f'{question} {progression_list[i]}'
 
-    return (intro, question, answer)
+    return (intro, question, str(answer))

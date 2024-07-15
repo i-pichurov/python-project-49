@@ -10,7 +10,7 @@ def start_game(game):
     while i < 3:
         (question, answer) = game()[1:3]
         print(f'Question: {question}')
-        user_answer = prompt.integer('Your answer: ')
+        user_answer = prompt.string('Your answer: ')
         if answer == user_answer:
             print('Correct!')
             i += 1

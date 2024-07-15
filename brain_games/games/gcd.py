@@ -19,4 +19,4 @@ def br_gcd():
         dividend = divider
         divider = i
         i = dividend % divider
-    return (intro, question, divider)
+    return (intro, question, str(divider))

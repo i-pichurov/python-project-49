@@ -11,10 +11,8 @@ def br_calc():
     question = f'{num1}{op}{num2}'
     if op == "-":
         answer = num1 - num2
-        return (intro, question, answer)
     elif op == "+":
         answer = num1 + num2
-        return (intro, question, answer)
     else:
         answer = num1 * num2
-        return (intro, question, answer)
+    return (intro, question, str(answer))
