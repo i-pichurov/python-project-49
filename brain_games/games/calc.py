@@ -4,8 +4,8 @@ import random
 
 def br_calc():
     intro = 'What is the result of the expression?'
-    num1 = random.randint(-99, 99)
-    num2 = random.randint(-99, 99)
+    num1 = random.randint(1, 99)
+    num2 = random.randint(1, 99)
     operator = ["-", "+", "*"]
     op = random.choice(operator)
     question = f'Question: {num1} {op} {num2}'
