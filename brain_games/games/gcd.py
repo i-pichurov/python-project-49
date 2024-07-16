@@ -6,7 +6,7 @@ def br_gcd():
     intro = 'Find the greatest common divisor of given numbers.'
     num1 = random.randint(1, 10000)
     num2 = random.randint(1, 10000)
-    question = f'{num1} {num2}'
+    question = f'Question: {num1} {num2}'
 
     if num1 > num2:
         dividend = num1
