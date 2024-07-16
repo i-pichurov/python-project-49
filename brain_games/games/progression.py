@@ -8,7 +8,7 @@ def pr():
     progression_length = random.randint(5, 10)
     progression_step = random.randint(1, 10)
     progression_list = []
-    question = ''
+    question = 'Question:'
 
     for i in range(progression_length):
         progression_list.append(progression_num)
