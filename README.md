@@ -7,7 +7,7 @@
 
 Python: 3.12.3\
 Pip: 24.0\
-Poetry: 1.8.3\
+Poetry: 1.8.3
 
 # Project description
 
@@ -15,11 +15,11 @@ The project is called Brain Games. It consists of 5 mini-games, to pass the game
 
 # Installing
 
-Copy the contents of the repository:\
+Copy the contents of the repository:
     
     git clone git@github.com:i-pichurov/python-project-49.git
 
-Install the package using the command in the Makefile:\
+Install the package using the command in the Makefile:
     
     make package-install
 
