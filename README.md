@@ -16,9 +16,11 @@ The project is called Brain Games. It consists of 5 mini-games, to pass the game
 # Installing
 
 Copy the contents of the repository:\
+    
     git clone git@github.com:i-pichurov/python-project-49.git
 
 Install the package using the command in the Makefile:\
+    
     make package-install
 
 After installing the package, you can run the games with the following commands:
