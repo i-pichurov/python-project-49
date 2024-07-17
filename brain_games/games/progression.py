@@ -2,7 +2,7 @@
 import random
 
 
-def pr():
+def br_progression():
     intro = 'What number is missing in the progression?'
     progression_num = random.randint(1, 1000)
     progression_length = random.randint(5, 10)

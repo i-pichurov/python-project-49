@@ -6,12 +6,12 @@ def br_calc():
     intro = 'What is the result of the expression?'
     num1 = random.randint(1, 99)
     num2 = random.randint(1, 99)
-    operator = ["-", "+", "*"]
-    op = random.choice(operator)
-    question = f'Question: {num1} {op} {num2}'
-    if op == "-":
+    operators_list = ["-", "+", "*"]
+    operator = random.choice(operators_list)
+    question = f'Question: {num1} {operator} {num2}'
+    if operator == "-":
         answer = num1 - num2
-    elif op == "+":
+    elif operator == "+":
         answer = num1 + num2
     else:
         answer = num1 * num2

@@ -18,12 +18,12 @@ def even_game():
     while i < 3:
         random_number = random.randint(1, 100)
         print(f'Question: {random_number}')
-        answer = prompt.string('Your answer: ')
-        if even_check(random_number) == answer:
+        user_answer = prompt.string('Your answer: ')
+        if even_check(random_number) == user_answer:
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer\
+            print(f"'{user_answer}' is wrong answer\
                    ;(. Correct answer was '{even_check(random_number)}'.")
             print(f"Let's try again, {name}!")
             break

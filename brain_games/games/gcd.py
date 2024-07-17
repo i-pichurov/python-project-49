@@ -10,13 +10,13 @@ def br_gcd():
 
     if num1 > num2:
         dividend = num1
-        divider = num2
+        divisor = num2
     else:
         dividend = num2
-        divider = num1
-    i = dividend % divider
+        divisor = num1
+    i = dividend % divisor
     while i > 0:
-        dividend = divider
-        divider = i
-        i = dividend % divider
-    return (intro, question, str(divider))
+        dividend = divisor
+        divisor = i
+        i = dividend % divisor
+    return (intro, question, str(divisor))
