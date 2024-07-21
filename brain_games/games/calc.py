@@ -17,5 +17,5 @@ def br_calc():
     num2 = random.randint(1, 99)
     operators_list = ["-", "+", "*"]
     operator = random.choice(operators_list)
-    question = f'Question: {num1} {operator} {num2}'
+    question = f'{num1} {operator} {num2}'
     return (intro, question, str(calculation(num1, num2, operator)))

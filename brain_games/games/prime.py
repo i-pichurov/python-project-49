@@ -14,7 +14,7 @@ def is_prime(num):
 def br_prime():
     intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     num = random.randint(1, 3571)
-    question = f'Question: {num}'
+    question = f'{num}'
     if is_prime(num) is True:
         answer = 'yes'
     else:
