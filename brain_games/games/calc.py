@@ -1,7 +1,7 @@
 import random
 
 
-def calculation (num1, num2, operator):
+def calculation(num1, num2, operator):
     if operator == "-":
         result = num1 - num2
     elif operator == "+":
@@ -9,6 +9,7 @@ def calculation (num1, num2, operator):
     else:
         result = num1 * num2
     return result
+
 
 def br_calc():
     intro = 'What is the result of the expression?'
