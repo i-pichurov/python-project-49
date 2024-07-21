@@ -1,6 +1,15 @@
 import random
 
 
+def calculation (num1, num2, operator):
+    if operator == "-":
+        result = num1 - num2
+    elif operator == "+":
+        result = num1 + num2
+    else:
+        result = num1 * num2
+    return result
+
 def br_calc():
     intro = 'What is the result of the expression?'
     num1 = random.randint(1, 99)
@@ -8,10 +17,4 @@ def br_calc():
     operators_list = ["-", "+", "*"]
     operator = random.choice(operators_list)
     question = f'Question: {num1} {operator} {num2}'
-    if operator == "-":
-        answer = num1 - num2
-    elif operator == "+":
-        answer = num1 + num2
-    else:
-        answer = num1 * num2
-    return (intro, question, str(answer))
+    return (intro, question, str(calculation(num1, num2, operator)))
