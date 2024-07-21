@@ -1,7 +1,7 @@
 import random
 
 
-def even_check(random_number):
+def is_even(random_number):
     if random_number % 2 == 0:
         return True
     else:
@@ -12,7 +12,7 @@ def even_game():
     intro = 'Answer "yes" if the number is even, otherwise answer "no".'
     random_number = random.randint(1, 100)
     question = f'Question: {random_number}'
-    if even_check(random_number) is True:
+    if is_even(random_number) is True:
         answer = 'yes'
     else:
         answer = 'no'
