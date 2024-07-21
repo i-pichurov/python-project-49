@@ -1,24 +1,28 @@
+#!/usr/bin/env python3
 import random
 
 
-def br_progression():
-    intro = 'What number is missing in the progression?'
+def progression():
     progression_num = random.randint(1, 1000)
     progression_length = random.randint(5, 10)
     progression_step = random.randint(1, 10)
     progression_list = []
-    question = 'Question:'
 
     for i in range(progression_length):
-        progression_list.append(progression_num)
+        progression_list.append(str(progression_num))
         progression_num += progression_step
+    return progression_list
 
-    answer = progression_list[random.randint(0, (progression_length - 1))]
 
-    for i in range(progression_length):
-        if progression_list[i] == answer:
-            question = f'{question} ..'
-        else:
-            question = f'{question} {progression_list[i]}'
+def progression_num_swap(progression_list):
+    index = random.randint(0, (len(progression_list) - 1))
+    answer = progression_list[index]
+    progression_list[index] = '..'
+    progression_list = ' '.join(progression_list)
+    return (answer, progression_list)
 
-    return (intro, question, str(answer))
+
+def br_progression():
+    intro = 'What number is missing in the progression?'
+    answer, question = progression_num_swap(progression())[0:2]
+    return (intro, question, answer)
