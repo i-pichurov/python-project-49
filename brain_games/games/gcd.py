@@ -16,9 +16,11 @@ def gcd_calc(num1, num2):
     return divisor
 
 
-def br_gcd():
-    intro = 'Find the greatest common divisor of given numbers.'
+def func():
     num1 = random.randint(1, 10000)
     num2 = random.randint(1, 10000)
     question = f'{num1} {num2}'
-    return (intro, question, str(gcd_calc(num1, num2)))
+    return (question, str(gcd_calc(num1, num2)))
+
+
+intro = 'Find the greatest common divisor of given numbers.'

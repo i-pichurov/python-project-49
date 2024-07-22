@@ -13,15 +13,13 @@ def progression():
     return progression_list
 
 
-def progression_num_swap(progression_list):
+def func():
+    progression_list = progression()
     index = random.randint(0, (len(progression_list) - 1))
     answer = progression_list[index]
     progression_list[index] = '..'
-    progression_list = ' '.join(progression_list)
-    return (answer, progression_list)
+    question = ' '.join(progression_list)
+    return (question, answer)
 
 
-def br_progression():
-    intro = 'What number is missing in the progression?'
-    answer, question = progression_num_swap(progression())[0:2]
-    return (intro, question, answer)
+intro = 'What number is missing in the progression?'

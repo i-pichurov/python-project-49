@@ -11,11 +11,13 @@ def calculation(num1, num2, operator):
     return result
 
 
-def br_calc():
-    intro = 'What is the result of the expression?'
+def func():
     num1 = random.randint(1, 99)
     num2 = random.randint(1, 99)
     operators_list = ["-", "+", "*"]
     operator = random.choice(operators_list)
     question = f'{num1} {operator} {num2}'
-    return (intro, question, str(calculation(num1, num2, operator)))
+    return (question, str(calculation(num1, num2, operator)))
+
+
+intro = 'What is the result of the expression?'

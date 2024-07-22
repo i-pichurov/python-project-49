@@ -11,12 +11,14 @@ def is_prime(num):
         return False
 
 
-def br_prime():
-    intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+def func():
     num = random.randint(1, 3571)
     question = f'{num}'
     if is_prime(num) is True:
         answer = 'yes'
     else:
         answer = 'no'
-    return (intro, question, answer)
+    return (question, answer)
+
+
+intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'

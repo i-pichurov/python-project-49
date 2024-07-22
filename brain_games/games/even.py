@@ -17,4 +17,5 @@ def func():
         answer = 'no'
     return (question, answer)
 
+
 intro = 'Answer "yes" if the number is even, otherwise answer "no".'
