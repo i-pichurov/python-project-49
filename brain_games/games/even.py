@@ -8,12 +8,13 @@ def is_even(random_number):
         return False
 
 
-def even_game():
-    intro = 'Answer "yes" if the number is even, otherwise answer "no".'
+def func():
     random_number = random.randint(1, 100)
     question = f'{random_number}'
     if is_even(random_number) is True:
         answer = 'yes'
     else:
         answer = 'no'
-    return (intro, question, answer)
+    return (question, answer)
+
+intro = 'Answer "yes" if the number is even, otherwise answer "no".'

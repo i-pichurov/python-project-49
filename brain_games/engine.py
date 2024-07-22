@@ -4,10 +4,10 @@ import prompt
 
 def start_game(game):
     name = brain_games.games.welcome.welcome_user()
-    print(game()[0])
+    print(game.intro)
     i = 0
     while i < 3:
-        question, answer = game()[1:3]
+        question, answer = game.func()[0:2]
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if answer == user_answer:
