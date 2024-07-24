@@ -1,7 +1,7 @@
 import random
 
 
-INTRO = 'What is the result of the expression?'
+INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(random_number):

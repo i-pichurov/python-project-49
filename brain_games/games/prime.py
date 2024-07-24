@@ -1,7 +1,7 @@
 import random
 
 
-INTRO = 'What is the result of the expression?'
+INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):

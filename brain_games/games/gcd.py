@@ -1,7 +1,7 @@
 import random
 
 
-INTRO = 'What is the result of the expression?'
+INTRO = 'Find the greatest common divisor of given numbers.'
 
 
 def calculate_gcd(num1, num2):

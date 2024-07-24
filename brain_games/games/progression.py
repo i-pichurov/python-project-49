@@ -1,7 +1,7 @@
 import random
 
 
-INTRO = 'What is the result of the expression?'
+INTRO = 'What number is missing in the progression?'
 
 
 def generate_progression():
