@@ -1,9 +1,15 @@
-import brain_games.games.welcome
 import prompt
 
 
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}')
+    return name
+
+
 def start_game(game):
-    name = brain_games.games.welcome.welcome_user()
+    name = welcome_user()
     print(game.intro)
     i = 0
     while i < 3:
