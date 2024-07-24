@@ -1,6 +1,9 @@
 import random
 
 
+INTRO = 'What is the result of the expression?'
+
+
 def is_prime(num):
     if num > 1:
         for i in range(2, (num + 1)):
@@ -19,6 +22,3 @@ def game_logic():
     else:
         answer = 'no'
     return (question, answer)
-
-
-intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'

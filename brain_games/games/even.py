@@ -1,6 +1,9 @@
 import random
 
 
+INTRO = 'What is the result of the expression?'
+
+
 def is_even(random_number):
     if random_number % 2 == 0:
         return True
@@ -16,6 +19,3 @@ def game_logic():
     else:
         answer = 'no'
     return (question, answer)
-
-
-intro = 'Answer "yes" if the number is even, otherwise answer "no".'

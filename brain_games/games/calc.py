@@ -1,6 +1,9 @@
 import random
 
 
+INTRO = 'What is the result of the expression?'
+
+
 def calculation(num1, num2, operator):
     if operator == "-":
         result = num1 - num2
@@ -18,6 +21,3 @@ def game_logic():
     operator = random.choice(operators_list)
     question = f'{num1} {operator} {num2}'
     return (question, str(calculation(num1, num2, operator)))
-
-
-intro = 'What is the result of the expression?'

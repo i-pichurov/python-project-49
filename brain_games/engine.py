@@ -10,7 +10,7 @@ def welcome_user():
 
 def start_game(module):
     name = welcome_user()
-    print(module.intro)
+    print(module.INTRO)
     i = 0
     while i < 3:
         question, answer = module.game_logic()[0:2]

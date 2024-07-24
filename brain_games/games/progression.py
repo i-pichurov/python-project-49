@@ -1,6 +1,9 @@
 import random
 
 
+INTRO = 'What is the result of the expression?'
+
+
 def generate_progression():
     progression_num = random.randint(1, 1000)
     progression_length = random.randint(5, 10)
@@ -20,6 +23,3 @@ def game_logic():
     progression_list[index] = '..'
     question = ' '.join(progression_list)
     return (question, answer)
-
-
-intro = 'What number is missing in the progression?'

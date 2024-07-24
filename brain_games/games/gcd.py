@@ -1,6 +1,9 @@
 import random
 
 
+INTRO = 'What is the result of the expression?'
+
+
 def gcd_calc(num1, num2):
     if num1 > num2:
         dividend = num1
@@ -21,6 +24,3 @@ def game_logic():
     num2 = random.randint(1, 10000)
     question = f'{num1} {num2}'
     return (question, str(gcd_calc(num1, num2)))
-
-
-intro = 'Find the greatest common divisor of given numbers.'
