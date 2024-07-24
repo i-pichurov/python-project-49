@@ -8,12 +8,12 @@ def welcome_user():
     return name
 
 
-def start_game(game):
+def start_game(module):
     name = welcome_user()
-    print(game.intro)
+    print(module.intro)
     i = 0
     while i < 3:
-        question, answer = game.func()[0:2]
+        question, answer = module.game_logic()[0:2]
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if answer == user_answer:

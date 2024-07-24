@@ -16,7 +16,7 @@ def gcd_calc(num1, num2):
     return divisor
 
 
-def func():
+def game_logic():
     num1 = random.randint(1, 10000)
     num2 = random.randint(1, 10000)
     question = f'{num1} {num2}'

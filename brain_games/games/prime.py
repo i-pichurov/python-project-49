@@ -11,7 +11,7 @@ def is_prime(num):
         return False
 
 
-def func():
+def game_logic():
     num = random.randint(1, 3571)
     question = f'{num}'
     if is_prime(num) is True:

@@ -11,7 +11,7 @@ def calculation(num1, num2, operator):
     return result
 
 
-def func():
+def game_logic():
     num1 = random.randint(1, 99)
     num2 = random.randint(1, 99)
     operators_list = ["-", "+", "*"]

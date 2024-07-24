@@ -8,7 +8,7 @@ def is_even(random_number):
         return False
 
 
-def func():
+def game_logic():
     random_number = random.randint(1, 100)
     question = f'{random_number}'
     if is_even(random_number) is True:

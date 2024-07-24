@@ -13,7 +13,7 @@ def generate_progression():
     return progression_list
 
 
-def func():
+def game_logic():
     progression_list = generate_progression()
     index = random.randint(0, (len(progression_list) - 1))
     answer = progression_list[index]
