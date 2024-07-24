@@ -2,6 +2,10 @@ import prompt
 
 
 def welcome_user():
+    """
+    Greets the user and 
+    returns the name he specified.
+    """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -9,6 +13,14 @@ def welcome_user():
 
 
 def start_game(module):
+    """
+    Greets the user
+    Depending on the module in the argument, asks the user questions
+    Compares the user's answer with the "answer" variable
+    If answered correctly, generates a new question
+    If the answer is incorrect, the function is aborted
+    After 3 correct answers in a row, congratulates the user
+    """
     name = welcome_user()
     print(module.INTRO)
     i = 0

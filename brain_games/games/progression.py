@@ -5,6 +5,7 @@ INTRO = 'What number is missing in the progression?'
 
 
 def generate_progression():
+    """Generates and returns a random arithmetic progression"""
     progression_num = random.randint(1, 1000)
     progression_length = random.randint(5, 10)
     progression_step = random.randint(1, 10)
@@ -17,6 +18,10 @@ def generate_progression():
 
 
 def game_logic():
+    """
+    Replaces any number in a random arithmetic progression with ".." .
+    Returns question and answer.
+    """
     progression_list = generate_progression()
     index = random.randint(0, (len(progression_list) - 1))
     answer = progression_list[index]

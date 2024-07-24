@@ -5,6 +5,7 @@ INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
+    """Checks if a number is prime."""
     if num > 1:
         for i in range(2, (num + 1)):
             if (num % i == 0) and (i != num):
@@ -15,6 +16,10 @@ def is_prime(num):
 
 
 def game_logic():
+    """
+    Generates a random number.
+    Returns question and answer.
+    """
     num = random.randint(1, 3571)
     question = f'{num}'
     if is_prime(num) is True:
