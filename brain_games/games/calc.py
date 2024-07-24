@@ -4,7 +4,7 @@ import random
 INTRO = 'What is the result of the expression?'
 
 
-def calculation(num1, num2, operator):
+def calculate_result(num1, num2, operator):
     if operator == "-":
         result = num1 - num2
     elif operator == "+":
@@ -20,4 +20,4 @@ def game_logic():
     operators_list = ["-", "+", "*"]
     operator = random.choice(operators_list)
     question = f'{num1} {operator} {num2}'
-    return (question, str(calculation(num1, num2, operator)))
+    return (question, str(calculate_result(num1, num2, operator)))
