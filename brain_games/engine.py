@@ -16,7 +16,7 @@ def start_game(module):
         question, answer = module.game_logic()[0:2]
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
-        if answer == user_answer:
+        if str(answer) == user_answer:
             print('Correct!')
             i += 1
         else:

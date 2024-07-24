@@ -20,4 +20,4 @@ def game_logic():
     operators_list = ["-", "+", "*"]
     operator = random.choice(operators_list)
     question = f'{num1} {operator} {num2}'
-    return (question, str(calculate_result(num1, num2, operator)))
+    return (question, calculate_result(num1, num2, operator))
