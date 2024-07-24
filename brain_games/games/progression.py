@@ -1,7 +1,7 @@
 import random
 
 
-def progression():
+def generate_progression():
     progression_num = random.randint(1, 1000)
     progression_length = random.randint(5, 10)
     progression_step = random.randint(1, 10)
@@ -14,7 +14,7 @@ def progression():
 
 
 def func():
-    progression_list = progression()
+    progression_list = generate_progression()
     index = random.randint(0, (len(progression_list) - 1))
     answer = progression_list[index]
     progression_list[index] = '..'
