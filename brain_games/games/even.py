@@ -4,22 +4,22 @@ import random
 INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(random_number: int) -> bool:
-    """Checks if an integer from the argument "random_number" is even
+def is_even(num: int) -> bool:
+    """Checks if an integer from the argument "num" is even
     and returns boolean result.
 
     Args:
-        random_number: integer that is checked for evenness.
+        num: integer that is checked for evenness.
 
     Returns:
-        True - if the remainder of dividing "random_number" by 2 == 0.
-        False - if the remainder of dividing "random_number" by 2 != 0.
+        True - if the remainder of dividing "num" by 2 == 0.
+        False - if the remainder of dividing "num" by 2 != 0.
         For example:
 
         is_even(4) => True
         is_even(3) => False
     """
-    if random_number % 2 == 0:
+    if num % 2 == 0:
         return True
     else:
         return False

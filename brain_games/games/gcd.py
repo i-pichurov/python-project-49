@@ -15,6 +15,10 @@ def calculate_gcd(num1: int, num2: int) -> int:
 
     Returns:
         Integer "divisor" - the greatest common divisor of "num1" and "num2".
+        For example:
+
+        calculate_gcd(899, 2761) => 1
+        calculate_gcd(450, 150) => 150
     """
     if num1 > num2:
         dividend = num1
