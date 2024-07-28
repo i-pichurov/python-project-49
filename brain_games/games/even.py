@@ -25,19 +25,20 @@ def is_even(random_number: int) -> bool:
         return False
 
 
-def game_logic():
+def game_logic() -> tuple:
     """
     Randomly generates an integer: "random_number", checks it for evenness.
-    Returns a string "question" with the generated random integer that is
-    checked for evenness and the result of the check as a string "answer"
+    Returns a string "question" with the value of "random_number" that is
+    checked for evenness and the result of the check in
+    is_even(random_number: int) as a string "answer"
     with value: 'yes' or 'no'.
 
     Args:
         - the required variables are generated in the function.
 
     Returns:
-        A tuple consisting of a string "question" with the generated random integer
-        that is checked for evenness and the result of the check
+        A tuple consisting of a string "question" with the value of
+        "random_number" and the result of the check
         as a string "answer" with value: 'yes' or 'no'.
         For example:
 

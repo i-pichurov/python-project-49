@@ -40,7 +40,8 @@ def game_logic() -> tuple:
     Randomly generates two integers: "num1" and "num2".
     Randomly generates an arithmetic operator": "operators_list" -> "operator".
     Returns a string "question" with the generated operation and numbers,
-    as well as the result of this operation as an integer.
+    as well as the result of this operation in
+    "calculate_result(num1: int, num2: int, operator: str)" as an integer.
 
     Args:
         - the required variables are generated in the function.
