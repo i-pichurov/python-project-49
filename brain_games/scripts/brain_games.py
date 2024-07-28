@@ -4,9 +4,7 @@ import brain_games.cli
 
 def main():
     """
-    Calls the start_game() function from the brain_games/engine.py module.
-    Args:
-        module: brain_games/games/cli.py
+    Calls the welcome_user() function from the brain_games/cli.py module.
     """
     brain_games.cli.welcome_user()
 
