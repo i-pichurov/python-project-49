@@ -36,7 +36,7 @@ def game_logic():
         - the required variables are generated in the function.
 
     Returns:
-        A tuple consisting a string "question" with the generated random integer
+        A tuple consisting of a string "question" with the generated random integer
         that is checked for evenness and the result of the check
         as a string "answer" with value: 'yes' or 'no'.
         For example:
