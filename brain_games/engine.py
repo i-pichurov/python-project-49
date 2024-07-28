@@ -3,7 +3,7 @@ import prompt
 
 def welcome_user():
     """
-    Greets the user and 
+    Greets the user and
     returns the name he specified.
     """
     print('Welcome to the Brain Games!')
