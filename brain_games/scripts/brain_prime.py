@@ -4,6 +4,11 @@ import brain_games.games.prime
 
 
 def main():
+    """
+    Calls the start_game() function from the brain_games/engine.py module.
+    Args:
+        module: brain_games/games/prime.py
+    """
     brain_games.engine.start_game(brain_games.games.prime)
 
 
