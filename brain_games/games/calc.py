@@ -24,6 +24,7 @@ def calculate_result(num1: int, num2: int, operator: str) -> int:
         calculate_result(1, 4, "+") => 5
         calculate_result(1, 4, "/") => "Incorrect operator."
     """
+
     if operator == "-":
         return num1 - num2
     elif operator == "+":
@@ -36,9 +37,9 @@ def calculate_result(num1: int, num2: int, operator: str) -> int:
 
 def game_logic() -> tuple:
     """
-    Randomly generates two integers.
-    Randomly generates an arithmetic operator.
-    Returns a string with the generated operation and numbers,
+    Randomly generates two integers: "num1" and "num2".
+    Randomly generates an arithmetic operator": "operators_list" -> "operator".
+    Returns a string "question" with the generated operation and numbers,
     as well as the result of this operation as an integer.
 
     Args:
